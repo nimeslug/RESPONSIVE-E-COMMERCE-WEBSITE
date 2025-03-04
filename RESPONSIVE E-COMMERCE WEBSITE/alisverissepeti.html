@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <title>Alışveriş Sepeti</title>
+    <head>
+        <link rel="stylesheet" href="alisverissepeti.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html" alt=""><i class="fa-solid fa-chevron-left"></i></a>
+            <p class="logo"><img src="nimeslug (1).png" alt=""></p>
+
+
+            <div id="zaman">
+                <script>
+                    function tarihSaat(params) {
+                        var date = new Date().toLocaleString('tr-TR');
+                        document.getElementById('zaman').innerHTML = date;
+                    }
+    
+                    setInterval(tarihSaat, 1000);
+                </script>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i><p id="count">0</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>Sepetim</p></div>
+                <div id="cartItem">Sepet Boş</div>
+                <div class="foot">
+                    <h3>Toplam</h3>
+                    <h2 id="total">0.00 TL</h2>
+                </div>
+                <a href="#" class="bton">Ödeme Yap</a>
+            </div>
+        </div>
+        <script src="alisverissepeti.js"></script>
+    </body>
+</html>

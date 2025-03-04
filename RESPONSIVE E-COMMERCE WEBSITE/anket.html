@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anket.css">
+    <title>
+        Anket
+    </title>
+</head>
+
+<body>
+    <!--Form Oluşturma-->
+    <form id="form">
+        <hr>
+        <h2 style="font-family: sans-serif">Anket</h2>
+        <hr>
+        <br><br><br>
+        <div class="form-control">
+            <label style="font-weight: 600;">
+                Kitap okuma alışkanlık düzeyiniz nedir?
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Çok okurum</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">Orta düzeyde okurum</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Hiç okumam</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label style="font-weight: 600;">
+                Günde kaç sayfa kitap okuyorsunuz?
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed1">10-20</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed1">20-40</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed1">40 ve üzeri</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label style="font-weight: 600;">
+                Ebeveynleriniz kitap okuyor mu?
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed2">Evet</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed2">Hayır</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label style="font-weight: 600;">
+                Bir kitabı birden fazla okuduğunuz oldu mu?
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed3">Evet</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed3">Sadece kitapta not aldığım yerlere baktım</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed3">Hayır</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label style="font-weight: 600;">
+                E-kitapların normal kitaplardan daha iyi olduğunu düşünüyor musun?
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed4">Daha iyi</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed4">Emin Değilim</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed4">Daha iyi Değil</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label style="font-weight: 600;">
+                En son ne zaman kitap okudunuz?
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed5">1 hafta önce</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed5">1 ay önce</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed5">6-12 ay arası</input>
+            </label>
+        </div>
+
+        <br><br>
+        <div class="form-control">
+            <label for="comment" style="font-weight: 600;">
+             Öneri ^-^
+            </label>
+
+            <textarea name="comment" id="comment" placeholder="Önerilerini buraya yaz.">
+			</textarea>
+        </div>
+
+        <!--Gönderme Butonu-->
+        <button type="submit" value="submit">
+            Gönder
+        </button>
+
+        <button type="reset" value="reset" style="background-color: rgb(150, 1, 1);">
+            Temizle
+        </button>
+    </form>
+</body>
+
+</html>
